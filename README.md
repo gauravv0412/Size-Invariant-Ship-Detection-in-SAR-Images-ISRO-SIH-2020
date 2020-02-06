@@ -3,8 +3,8 @@
 You can use the satellite images given in the repo for the validation of the model.Or you can also use any google earth image for the same purpose.The model works great on all google earth images.
 
 WEBSITE DETAILS
-Username - "admin"\n
-Password - "admin"\n
+Username - "admin"
+Password - "admin"
 
 Pass Key - "ARTEMIS" (FOR SIGNUP PURPOSE)
 
