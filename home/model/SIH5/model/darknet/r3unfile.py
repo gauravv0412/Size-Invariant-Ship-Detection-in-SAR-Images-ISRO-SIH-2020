@@ -78,7 +78,7 @@ for line in ls:
     line = str(line)
     image, prob, x, y, w, h = line.split()
     prob, x, y, w, h = float(prob), float(x), float(y), float(w), float(h)
-    if prob > 0.03:
+    if prob > 0.15:
         im = cv2.imread('./Chipped/' + image + '.jpg')
         im = cv2.cvtColor(im,cv2.COLOR_RGB2BGR)
         im = np.array(im, dtype=np.uint8)
