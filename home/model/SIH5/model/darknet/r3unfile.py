@@ -37,29 +37,30 @@ n = dim*(n//dim)
 img = img[:m, :n, :]
 print('New shape of image for chipping: ', img.shape)
 
-os.system('rm -r ./Chipped')
-os.system('rm -r ./results')
+os.system('sudo rm -r ./Chipped')
+os.system('sudo rm -r ./results')
 os.system('mkdir ./Chipped')
 os.system('mkdir ./results')
 count = 1
 print('Chipping....', end = ' ')
+path = str(os.getcwd())
 fw = open('./testImages.txt', 'w')
 for i in range(0,m,dim):
     for j in range(0,n,dim):
         temp = img[i:i+dim,j:j+dim,:]
         plt.imsave("./Chipped/"+str(i + dim)+'_'+str(j + dim)+".jpg",temp)
-        fw.write("/Users/gauravverma/Library/Containers/com.apple.STMExtension.Mail/Data/Documents/Azure/temp/SIH-Portal/home/model/SIH5/model/darknet/Chipped/"+str(i + dim)+'_'+str(j + dim)+".jpg\n")
+        fw.write(path + "/Chipped/"+str(i + dim)+'_'+str(j + dim)+".jpg\n")
         count += 1
 fw.close()
 print('Chipped')
 
 print('Predicting....', count)
 if count == 2:
-    os.system("./darknet detector test ./data/ship.data ./cfg/yolov3-ship.cfg ./yolov3-ship_last.weights\ 3 ./Chipped/512_512.jpg")
+    os.system("sudo ./darknet detector test ./data/ship.data ./cfg/yolov3-ship.cfg ./yolov3-ship_last.weights\ 3 ./Chipped/512_512.jpg")
     os.system("cp ./predictions.jpg "+sys.argv[2] + '/media/images/result.jpg')
 else:
     # os.system("./darknet detector valid ./data/ship.data ./cfg/yolov3-ship.cfg ./yolov3-ship_last.weights\ 3 ./results.txt")
-    os.system("./darknet detector valid ./data/ship.data ./cfg/yolov3-ship.cfg ./yolov3-ship_1200.weights ./results.txt")
+    os.system("sudo ./darknet detector valid ./data/ship.data ./cfg/yolov3-ship.cfg ./yolov3-ship_1200.weights ./results.txt")
 # for image in os.listdir("./Chipped"):
 #     print(count, image)
 #     count += 1
