@@ -5,3 +5,6 @@ You can use the satellite images given in the repo for the validation of the mod
 WEBSITE DETAILS(FOR LOGIN)
 Username - "himanshu"
 Password - "Himanshu9313@"
+
+
+WEBSITE LINK : http://sihartemis.eastus.cloudapp.azure.com:8080
