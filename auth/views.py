@@ -43,10 +43,13 @@ def Signup(request):
     password = request.POST.get('password')
 
     if(key == "ARTEMIS"):
-        user = User.objects.create_user(first_name, mail, password)
+        user = User.objects.create_user(username, mail, password)
+        user.first_name = first_name
         user.last_name = last_name
         user.save()
-        return render(request, 'auth/login.html')
+        user = authenticate(request, username = username, password = password)
+        login(request , user)
+        return render(request, 'home/index.html')
     else:
         return render(request, 'auth/signup.html')
 
