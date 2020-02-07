@@ -15,15 +15,15 @@ Hosted on Microsoft Azure.
 
 Enter username and password of of your github account which has access to this repo when asked:
 
-$ git clone https://github.com/gauravv0412/artemis.git
+	$ git clone https://github.com/gauravv0412/artemis.git
 
-$ cd artemis
+	$ cd artemis
 
-$ sudo apt-get install virtualenv
+	$ sudo apt-get install virtualenv
 
-$ virtualenv env
+	$ virtualenv env
 
-$ source env/bin/activate
+	$ source env/bin/activate
 
 if python3 doesn't work :
 
@@ -33,40 +33,40 @@ if pip3 doesnt work
 
 	$ sudo apt-get install python3-pip
 
-$ pip3 install -r requirements.txt
+	$ pip3 install -r requirements.txt
 
-$ python3 manage.py makemigrations
+	$ python3 manage.py makemigrations
 
-$ python3 manage.py migrate
+	$ python3 manage.py migrate
 
-$ pip3 install opencv-python
+	$ pip3 install opencv-python
 
-$ sudo su
+	$ sudo su
 
-$ apt update && apt install -y libsm6 libxext6
+	$ apt update && apt install -y libsm6 libxext6
 
-$ sudo apt-get install libxrender1
+	$ sudo apt-get install libxrender1
 
-$ exit
+	$ exit
 
-$ cd home/model/SIH5/model/darknet/
+	$ cd home/model/SIH5/model/darknet/
 
-$ wget https://www.dropbox.com/s/55ykehj9kra2stt/yolov3-ship_1200.weights?dl=0 -O yolov3-ship_1200.weights
+	$ wget https://www.dropbox.com/s/55ykehj9kra2stt/yolov3-ship_1200.weights?dl=0 -O yolov3-ship_1200.weights
 
-$ make
+	$ make
 
 get back to artemis directory by executing next command 5 times
 
-$ cd ..
+	$ cd ..
 
-$ cd ..
+	$ cd ..
 
-$ cd ..
+	$ cd ..
 
-$ cd ..
+	$ cd ..
 
-$ cd ..
+	$ cd ..
 
-$ python3 manage.py runserver
+	$ python3 manage.py runserver
 
 go to browser and type http://127.0.0.1:8000/
