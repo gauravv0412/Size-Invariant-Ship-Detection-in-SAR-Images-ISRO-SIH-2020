@@ -1,8 +1,8 @@
 # Artemis
 ## Category - Software
-## PROBLEM NO.- NM404
-## ORGANISATION - ISRO (Indian Space Research Organisation)
-## PROBLEM STATEMENT - Size Invariant Ship detection from SAR Images
+## Problem No.- NM404
+## Organisation - ISRO (Indian Space Research Organisation)
+## Problem Statement - Size Invariant Ship detection from SAR Images
 
 You can use the satellite images given in the repo for the validation of the model.Or you can also use any google earth image for the same purpose.The model works great on all google earth images.
 
