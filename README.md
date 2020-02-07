@@ -63,6 +63,8 @@ get back to artemis directory by executing next command 5 times
 
 	$ cd ..
 
+to launch server execute the following
+
 	$ python3 manage.py runserver
 
 go to browser and type http://127.0.0.1:8000/
