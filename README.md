@@ -25,11 +25,7 @@ Enter username and password of of your github account which has access to this r
 
 	$ source env/bin/activate
 
-if python3 doesn't work :
-
 	$ sudo apt-get install python3.6
-
-if pip3 doesnt work
 
 	$ sudo apt-get install python3-pip
 
