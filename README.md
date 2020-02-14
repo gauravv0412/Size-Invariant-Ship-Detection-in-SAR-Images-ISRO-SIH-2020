@@ -97,3 +97,29 @@ to launch server execute the following
 go to browser and type http://127.0.0.1:8000/
 
 ![](Screenshots/12.png)
+
+## Website Demo
+
+Go to Sign Up Page to create a new account
+
+Enter the **PASSKEY as ARTEMIS** while creating an account
+
+![](Screenshots/13.png)
+
+Go to Project Demo and upload a satellite image
+( You can use sample images included in the repository )
+
+![](Screenshots/14.png)
+
+![](Screenshots/15.png)
+
+Now the model will start working !!
+( Wait for 2 mins if your VM is working on a CPU )
+
+![](Screenshots/16.png)
+
+![](Screenshots/17.png)
+
+And the ships in the image will be detected with their respective sizes !!
+
+![](Screenshots/18.png)
