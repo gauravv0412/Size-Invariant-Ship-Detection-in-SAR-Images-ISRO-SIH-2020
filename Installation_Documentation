@@ -1,41 +1,108 @@
-# Enter username and password of of your gmail account which has access to this repo when asked:
-git clone https://github.com/gauravv0412/artemis.git
+## Installation Documentation
+Youtube Video Link : https://youtu.be/dJGfQYUTWYg (Installation and Demo)
 
-cd artemis
+Enter username and password of of your github account which has access to this repo when asked:
 
-sudo apt-get install virtualenv
+	$ git clone https://github.com/gauravv0412/artemis.git
+	
+![](Screenshots/1.png)
 
-virtualenv env
-source env/bin/activate
+	$ cd artemis
 
-if python3 doesn't work :
-	sudo apt-get install python3.6
-if pip3 doesnt work
-	sudo apt-get install python3-pip
+	$ sudo apt-get install virtualenv
 
-pip3 install -r requirements.txt
+	$ virtualenv env
 
-python3 manage.py makemigrations
-python3 manage.py migrate
+	$ source env/bin/activate
+	
+![](Screenshots/2.png)
 
-pip3 install opencv-python
-sudo su
-apt update && apt install -y libsm6 libxext6
-sudo apt-get install libxrender1
-exit
+	$ sudo apt-get install python3.6
 
-cd home/model/SIH5/model/darknet/
+	$ sudo apt-get install python3-pip
 
-wget https://www.dropbox.com/s/55ykehj9kra2stt/yolov3-ship_1200.weights?dl=0 -O yolov3-ship_1200.weights
+	$ pip3 install -r requirements.txt
+	
+![](Screenshots/3.png)
 
-make
+	$ python3 manage.py makemigrations
 
-# get back to artemis directory by executing next command 5 times
-cd ..
-cd ..
-cd ..
-cd ..
-cd ..
+	$ python3 manage.py migrate
+	
+![](Screenshots/4.png)
 
-python3 manage.py runserver
+	$ pip3 install opencv-python
+	
+![](Screenshots/5.png)
+
+	$ sudo su
+
+	$ apt update && apt install -y libsm6 libxext6
+	
+![](Screenshots/6.png)
+
+	$ sudo apt-get install libxrender1
+
+	$ exit
+	
+![](Screenshots/7.png)
+
+	$ cd home/model/SIH5/model/darknet/
+
+	$ wget https://www.dropbox.com/s/55ykehj9kra2stt/yolov3-ship_1200.weights?dl=0 -O yolov3-ship_1200.weights
+	
+![](Screenshots/8.png)
+
+	$ make
+	
+![](Screenshots/9.png)
+
+get back to artemis directory by executing next command 5 times
+
+	$ cd ..
+
+	$ cd ..
+
+	$ cd ..
+
+	$ cd ..
+
+	$ cd ..
+	
+![](Screenshots/10.png)
+
+to launch server execute the following
+
+	$ python3 manage.py runserver
+	
+![](Screenshots/11.png)
+
 go to browser and type http://127.0.0.1:8000/
+
+![](Screenshots/12.png)
+
+## Website Demo
+
+Go to Sign Up Page to create a new account
+
+Enter the **PASSKEY as ARTEMIS** while creating an account
+
+![](Screenshots/13.png)
+
+Go to Project Demo and upload a satellite image
+( You can use sample images included in the repository )
+
+![](Screenshots/14.png)
+
+![](Screenshots/15.png)
+
+Now the model will start working !!
+( Wait for 2 mins if your VM is working on a CPU )
+
+![](Screenshots/16.png)
+
+![](Screenshots/17.png)
+
+And the ships in the image will be detected with their respective sizes !!
+
+![](Screenshots/18.png)
