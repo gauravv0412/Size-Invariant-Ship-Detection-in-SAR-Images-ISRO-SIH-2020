@@ -21,6 +21,8 @@ Youtube Video Link : https://youtu.be/dJGfQYUTWYg (Installation and Demo)
 Enter username and password of of your github account which has access to this repo when asked:
 
 	$ git clone https://github.com/gauravv0412/artemis.git
+	
+	![Test Image 1](/Screenshots/1.png)
 
 	$ cd artemis
 
